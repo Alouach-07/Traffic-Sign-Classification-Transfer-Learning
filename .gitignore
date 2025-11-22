@@ -1,0 +1,51 @@
+# --- Python & General ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+# Common names for virtual envs
+env/
+venv/
+.env
+.venv/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- IDE & System Files ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Mac & Windows system files
+.DS_Store
+Thumbs.db
+
+# --- Project Specific: Large Files ---
+
+# 1. Datasets
+# Exclude the GTSRB dataset folder to save space.
+# Users should download it from the Kaggle link in your README.
+gtsrb-german-traffic-sign/
+input/
+data/
+*.zip
+*.csv
+
+# 2. Trained Models
+# These are likely too large for standard GitHub storage.
+# You have them backed up on Drive, which is excellent.
+*.keras
+*.h5
+*.json
+*.weights
+
+# Explicitly ignoring your specific model files (just in case)
+modele_baseline_gtsrb.keras
+modele_mobilenetv2_finetuned.keras
+
+# --- Tensorflow/Keras specific logs ---
+logs/
+tensorboard_logs/
